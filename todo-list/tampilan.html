@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Todo List</h1>
+        </header>
+
+        <section class="form-section">
+            <form id="add-task-form" class="task-form">
+                <input type="text" id="task-title" placeholder="apa yang mau km catat disini?" required>
+                <select id="task-priority">
+                    <option value="low">mudah</option>
+                    <option value="medium" selected>normal</option>
+                    <option value="high">susah</option>
+                </select>
+                <input type="date" id="task-deadline" required>
+                <button type="submit" class="add-task-btn">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <ul id="task-list" class="task-list"></ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Organize your day with style!</p>
+    </footer>
+
+    <script src="todo.js"></script>
+</body>
+</html>
